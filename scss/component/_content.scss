@@ -1,0 +1,150 @@
+@use "../partials/index" as *;
+.main__sec {
+  /*main part started*/
+  width: 100%;
+  background-color: rgba(245, 245, 245, 255);
+  height: 580px;
+}
+
+.flexbody {
+  /*for creating flex in the main*/
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+
+.left__main {
+  /*Left side of nav*/
+  width: 55%;
+  height: 480px;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+
+  .left__main--item {
+    /*div which contains First line of main-left*/
+    display: flex;
+    align-items: center;
+    color: rgba(0, 122, 130, 255);
+
+    .large {
+      /*the yellow line in 1st paragraph*/
+      width: 40px;
+      height: 2px;
+      background-color: rgba(254, 189, 20, 255);
+      margin-right: 5px;
+    }
+  }
+
+  h2 {
+    /*for h2 of main section*/
+    font-family: Bebas_Neue;
+    font-size: 80px;
+    font-weight: 400;
+    width: 80%;
+    color: rgba(61, 61, 61, 255);
+  }
+
+  .para2 {
+    /*the paragraph of left side*/
+    color: rgba(156, 156, 156, 255);
+    width: 75%;
+  }
+
+  .button {
+    /*button of main*/
+    width: 30%;
+
+    button {
+      border: none;
+      border-radius: 20px;
+      background-color: rgba(0, 122, 130, 255);
+      color: #fff;
+      padding: 8px 15px;
+    }
+  }
+  
+  .leftmain__div {
+    /*div containing list of items and circle*/
+    display: flex;
+    color: rgba(141, 141, 141, 255);
+    width: 60%;
+    justify-content: space-between;
+    align-items: center;
+
+    .circle {
+      height: 8px;
+      width: 8px;
+      background-color: rgba(254, 187, 12, 255);
+      border-radius: 50%;
+    }
+  }  
+}
+
+
+.right__main {
+  /*right side of main part*/
+  width: 45%;
+
+  .banner__image {
+    /*Image of the banner at the right side*/
+    height: 580px;
+    width: auto;
+  }
+}
+
+.extra__details {
+  /*it contains 4 divs and carry data in them*/
+  position: absolute;
+  display: flex;
+  bottom: -120px;
+  width: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+
+  .extra__details--items {
+    /* 4 divs of extra-details*/
+    background-color: rgba(255, 255, 255, 255);
+    padding: 15px 0;
+    padding-left: 15px;
+    margin: 15px;
+
+    h2 {
+      /*Heading of extra-details*/
+      font-family: Bebas_Neue;
+      font-size: 40px;
+      width: 50%;
+      color: rgba(0, 122, 130, 255);
+    }
+
+    p {
+      /*paragraph of extra-details*/
+      color: rgba(135, 135, 135, 255);
+    }
+
+    .extra__details--item1 {
+      /*div which contains paragraph of div*/
+      padding: 15px 0px;
+      margin-right: 15px;
+      border-bottom: 2px solid rgba(254, 187, 10, 255);
+
+    }
+
+    &:hover {
+      /*hovering of extra details*/
+      background-color: rgba(0, 122, 130, 255);
+
+      h2 {
+        color: rgba(254, 187, 10, 255);
+      }
+
+      p {
+        color: white;
+      }
+    }
+  }
+}
+
+
