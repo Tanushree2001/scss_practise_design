@@ -1,0 +1,187 @@
+*, html, body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Lato;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: "Lato";
+  src: url("../../public/fonts/Lato/Lato-Regular.ttf");
+}
+@font-face {
+  font-family: "Bebas_Neue";
+  src: url("../../public/fonts/Bebas_Neue/BebasNeue-Regular.ttf");
+}
+.main__sec {
+  /*main part started*/
+  width: 100%;
+  background-color: rgb(245, 245, 245);
+  height: 580px;
+}
+
+.flexbody {
+  /*for creating flex in the main*/
+  display: flex;
+  position: relative;
+  height: 100%;
+}
+
+.left__main {
+  /*Left side of nav*/
+  width: 55%;
+  height: 480px;
+  padding-top: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+.left__main .left__main--item {
+  /*div which contains First line of main-left*/
+  display: flex;
+  align-items: center;
+  color: rgb(0, 122, 130);
+}
+.left__main .left__main--item .large {
+  /*the yellow line in 1st paragraph*/
+  width: 40px;
+  height: 2px;
+  background-color: rgb(254, 189, 20);
+  margin-right: 5px;
+}
+.left__main h2 {
+  /*for h2 of main section*/
+  font-family: Bebas_Neue;
+  font-size: 80px;
+  font-weight: 400;
+  width: 80%;
+  color: rgb(61, 61, 61);
+}
+.left__main .para2 {
+  /*the paragraph of left side*/
+  color: rgb(156, 156, 156);
+  width: 75%;
+}
+.left__main .button {
+  /*button of main*/
+  width: 30%;
+}
+.left__main .button button {
+  border: none;
+  border-radius: 20px;
+  background-color: rgb(0, 122, 130);
+  color: #fff;
+  padding: 8px 15px;
+}
+.left__main .leftmain__div {
+  /*div containing list of items and circle*/
+  display: flex;
+  color: rgb(141, 141, 141);
+  width: 60%;
+  justify-content: space-between;
+  align-items: center;
+}
+.left__main .leftmain__div .circle {
+  height: 8px;
+  width: 8px;
+  background-color: rgb(254, 187, 12);
+  border-radius: 50%;
+}
+
+.right__main {
+  /*right side of main part*/
+  width: 45%;
+}
+.right__main .banner__image {
+  /*Image of the banner at the right side*/
+  height: 580px;
+  width: auto;
+}
+
+.extra__details {
+  /*it contains 4 divs and carry data in them*/
+  position: absolute;
+  display: flex;
+  bottom: -120px;
+  width: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.extra__details .extra__details--items {
+  /* 4 divs of extra-details*/
+  background-color: rgb(255, 255, 255);
+  padding: 15px 0;
+  padding-left: 15px;
+  margin: 15px;
+}
+.extra__details .extra__details--items h2 {
+  /*Heading of extra-details*/
+  font-family: Bebas_Neue;
+  font-size: 40px;
+  width: 50%;
+  color: rgb(0, 122, 130);
+}
+.extra__details .extra__details--items p {
+  /*paragraph of extra-details*/
+  color: rgb(135, 135, 135);
+}
+.extra__details .extra__details--items .extra__details--item1 {
+  /*div which contains paragraph of div*/
+  padding: 15px 0px;
+  margin-right: 15px;
+  border-bottom: 2px solid rgb(254, 187, 10);
+}
+.extra__details .extra__details--items:hover {
+  /*hovering of extra details*/
+  background-color: rgb(0, 122, 130);
+}
+.extra__details .extra__details--items:hover h2 {
+  color: rgb(254, 187, 10);
+}
+.extra__details .extra__details--items:hover p {
+  color: white;
+}
+
+.navbar {
+  width: 100%;
+  padding: 16px 0;
+  background-color: rgb(245, 245, 245);
+}
+
+.flexprop {
+  /*Flex property apply on nav bar*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.horizontal__list {
+  display: flex;
+  list-style: none;
+}
+.horizontal__list li a {
+  text-decoration: none;
+  color: rgb(137, 137, 137);
+  font-size: 16px;
+  padding: 8px 16px;
+}
+.horizontal__list li a:hover {
+  color: rgb(254, 187, 10);
+}
+
+.nav__mid {
+  padding-right: 150px;
+}
+
+.horizontal-list-diffhov li a:hover {
+  color: white;
+  background-color: rgb(0, 122, 130);
+  border-radius: 20px;
+}/*# sourceMappingURL=main.css.map */

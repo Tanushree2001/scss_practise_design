@@ -1,0 +1,42 @@
+@use "../partials/index" as *;
+
+.navbar {
+  width: 100%;
+  padding: 16px 0;
+  background-color: $white-color;
+}
+
+.flexprop {
+  /*Flex property apply on nav bar*/
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.horizontal__list {
+  display: flex;
+  list-style: none;
+
+  li a {
+    text-decoration: none;
+    color: $light-grey;
+    font-size: 16px;
+    padding: 8px 16px;
+  }
+
+  li a:hover {
+    color: $yellow-color;
+  }
+}
+
+.nav__mid{
+  padding-right: 150px;
+}
+
+.horizontal-list-diffhov {
+  li a:hover {
+    color: white;
+    background-color: $blue-color;
+    border-radius: 20px;
+  }
+}
